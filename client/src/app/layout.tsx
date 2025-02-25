@@ -3,6 +3,7 @@ import './globals.css'
 import { ThemeProvider } from '@/components/ui/theme-provider'
 import { Inter } from 'next/font/google'
 import Header from '@/components/ui/header'
+import { Toaster } from '@/components/ui/toaster'
 
 const inter = Inter({ subsets: ['vietnamese'] })
 export const metadata: Metadata = {
@@ -22,6 +23,7 @@ export default function RootLayout({
           <ThemeProvider attribute='class' defaultTheme='system' enableSystem disableTransitionOnChange>
             <Header />
             {children}
+            <Toaster />
           </ThemeProvider>
         </body>
       </html>

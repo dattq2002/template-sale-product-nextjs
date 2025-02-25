@@ -1,4 +1,4 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
   /* config options here */
@@ -6,18 +6,18 @@ const nextConfig: NextConfig = {
     // setting img in there will allow us to use the next/image component
     remotePatterns: [
       {
-        protocol: "https",
-        hostname: "res.cloudinary.com", // link domain allowed
-        port: "",
-        pathname: "/**",
-      },
-    ],
+        protocol: 'https',
+        hostname: 'https://lottie.host', // link domain allowed
+        port: '',
+        pathname: '/**'
+      }
+    ]
   },
   logging: {
     fetches: {
-      fullUrl: true,
-    },
-  },
-};
+      fullUrl: true
+    }
+  }
+}
 
-export default nextConfig;
+export default nextConfig
